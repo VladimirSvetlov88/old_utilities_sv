@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="$(ProjectInclude)\utilities_version_class.h" />
     <ClInclude Include="$(ProjectInclude)\utilities_bit.h" />
     <ClInclude Include="$(ProjectInclude)\utilities_file.h" />
     <ClInclude Include="$(ProjectInclude)\utilities_log.h" />
@@ -22,6 +23,7 @@
     <ClInclude Include="$(ProjectInclude)\utilities_text.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(ProjectSource)\utilities_version_class.cpp" />
     <ClCompile Include="$(ProjectSource)\utilities_bit.cpp" />
     <ClCompile Include="$(ProjectSource)\utilities_file.cpp" />
     <ClCompile Include="$(ProjectSource)\utilities_log.cpp" />
@@ -37,13 +39,13 @@
     <ProjectGuid>{166F43EC-5395-4E2A-B6EB-BC48C6E96315}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>utilities_sv</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <LinkIncremental>false</LinkIncremental>
@@ -55,7 +57,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <LinkIncremental>false</LinkIncremental>
